@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import ClampCalculator from "@/components/ClampCalculator";
+import SvgEncoder from "@/components/SvgEncoder";
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">SVGエンコード機能の実装予定地</p>
+                <SvgEncoder />
               </CardContent>
             </Card>
           </TabsContent>
