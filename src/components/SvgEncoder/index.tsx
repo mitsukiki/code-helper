@@ -125,7 +125,7 @@ export default function SvgEncoder() {
               <div className="bg-muted p-4 rounded-md font-mono text-sm">
                 <div className="text-muted-foreground mb-2">CSS:</div>
                 <div className="break-all">
-                  background-image: url("{encodedOutput}");
+                  background-image: url(&quot;{encodedOutput}&quot;);
                 </div>
               </div>
               <Button

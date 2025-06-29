@@ -2,14 +2,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import ClampCalculator from "@/components/ClampCalculator";
 import SvgEncoder from "@/components/SvgEncoder";
+import ImageConverter from "@/components/ImageConverter";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="max-w-6xl mx-auto">
         <header className="text-center py-8">
-          <h1 className="text-4xl font-bold mb-2">開発者向けツール統合サイト</h1>
-          <p className="text-muted-foreground">画像変換、SVGエンコード、CSS clamp計算を1つのサイトで</p>
+          <h1 className="text-4xl font-bold">開発者向けツール統合サイト</h1>
         </header>
 
         <Tabs defaultValue="clamp" className="w-full">
@@ -46,7 +46,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">画像変換機能の実装予定地</p>
+                <ImageConverter />
               </CardContent>
             </Card>
           </TabsContent>
